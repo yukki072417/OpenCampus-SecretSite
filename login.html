@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秘密のページ</title>
+
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="login.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets//login-page/styling.js"></script>
+    <script src="login.js"></script>
+
+</head>
+
+<body>
+    <div id="form">
+        <div class="top">
+            <h1 id="site-name">あなたのだけの秘密のサイト♡</h1>
+        </div>
+
+        <div class="form-container">
+            <ul class="form-list">
+                <li class="form-item"><label class="form-label">あなたのID</label></li>
+                <li class="form-item"><input type="text" name="user_id" id="user-id" placeholder="あなたのID"></li>
+            </ul>
+        </div>
+        <div class="form-container">
+            <ul class="form-list">
+                <li class="form-item" id=""> <label class="form-label">あなたのパスワード</label> </li>
+                <div id="show-password-container">
+                    <li class="form-item"><input type="password" name="user_password" id="user-password" placeholder="あなたのパスワード"></li>    
+                    <li class="form-item"><img src="assets/icons/passwordHiding.png" class="show-pass" onclick="showPass()"></li>
+                </div>
+            </ul>
+        </div>
+        <input id="submit" type="submit" value="ログインする" onclick="login()">
+    </div>
+
+</body>
+
+</html>
